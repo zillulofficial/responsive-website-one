@@ -233,6 +233,16 @@ nav li a {
     display: flex;
     justify-content: space-between;
 }
+/* footer style */
+.footer{
+    width: 80%;
+    margin: 120px auto;
+    background-color: #FFF4E7;
+}
+.footer-title{
+    padding: 30px;
+    text-align: center;
+}
 
 /* responsive styles */
 
@@ -289,6 +299,9 @@ nav li a {
     .sponsor-icon {
         text-align: center;
     }
+    .footer-title{
+        padding: 10px;
+    }
     
 
 }
@@ -330,4 +343,8 @@ nav li a {
         gap: 20px;
         text-align: center;
     }
+    .footer-title{
+        padding: 30px;
+    }
+    
 }
