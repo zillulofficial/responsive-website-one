@@ -161,15 +161,31 @@ nav li a {
     color: #727272;
     font-size: 1.25rem;
 }
-
+/* sponsor style */
+.sponsor{
+    width: 80%;
+    margin: 0 auto;
+}
+.section-title{
+    text-align: center;
+}
+.section-des{
+    text-align: center;
+}
+.sponsor-icon{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
 /* responsive styles */
+
 /* small device */
 @media screen and (max-width: 576px) {
     .banner img {
         width: 100%;
     }
 
-    .nav-container, .facts-icon {
+    .nav-container, .facts-icon, .feature, .sponsor-icon {
         flex-direction: column;
     }
 
@@ -180,16 +196,14 @@ nav li a {
     .feature-grid {
         grid-template-columns: 1fr;
     }
-
-    .feature {
-        flex-direction: column;
-    }
-
     .feature-grid>img {
         width: 100%;
     }
-    .facts-icon{
+    .facts-icon, .sponsor-icon{
         gap: 20px;
+    }
+    .sponsor-icon{
+        text-align: center;
     }
 
 }
@@ -219,5 +233,11 @@ nav li a {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
+    }
+    .sponsor-icon{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        text-align: center;
     }
 }
