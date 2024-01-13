@@ -3,12 +3,13 @@
 
 /* shared style */
 * {
-    
+
     font-family: 'Inter', sans-serif;
     font-family: 'Merriweather', serif;
     font-family: 'Work Sans', sans-serif;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 8px;
     background: #FF900E;
     border: none;
@@ -17,122 +18,196 @@
     padding: 20px 25px;
     cursor: pointer;
 }
-/* header section */
-header{
-    background-color: rgba(255, 144, 14, 0.10);
-    padding: 30px 240px;
-}
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav > ul{
-    display: flex;
-    list-style: none;
-    margin-right: 2rem;
-}
-nav li{
-    list-style: none;
-    margin-right: 30px;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-nav li a{
-    text-decoration: none;
-    color: #424242;
-}
-.nav-title{
+
+.section-title {
     font-weight: 700;
     font-size: 2.8rem;
     color: #131313;
 }
-/* banner style */
-.banner{
-    text-align: center;
-}
-.banner-content{
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
-}
-.banner-title{
-    color: #131313;
-    font-size: 4rem;
-}
-.banner-des{
+
+.section-des {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
 }
 
-.banner img{
+.section-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-container>p {
+    max-width: 542px;
+}
+
+/* header section */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 30px 240px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner style */
+.banner {
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+}
+
+.banner-des {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
+
 /* feature styles */
-.feature{
+.feature {
     display: flex;
-    gap: 80px;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     margin-bottom: 90px;
 }
-.feature-grid{
+
+.feature-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
-.feature-column{
+
+.feature-column {
     max-width: 540px;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
 }
-.feature-title{
+
+.feature-title {
     font-size: 2.8rem;
     color: #727272;
     font-weight: 500;
 }
-.feature-des{
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
-}
-.of-our{
+
+.of-our {
     color: #131313;
     font-weight: 700;
 }
+
+/* fact style */
+.facts-icon {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-column {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.fact-title {
+    font-size: 2.8rem;
+    color: #424242;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.fact-des {
+    margin-top: 0;
+    font-weight: 600;
+    color: #727272;
+    font-size: 1.25rem;
+}
+
 /* responsive styles */
 /* small device */
 @media screen and (max-width: 576px) {
-    .banner img{
+    .banner img {
         width: 100%;
     }
-    .nav-container{
+
+    .nav-container {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 20px;
     }
-    .feature-grid{
+
+    .feature-grid {
         grid-template-columns: 1fr;
     }
-    .feature{
+
+    .feature {
         flex-direction: column;
     }
-    
-}
-/* medium device */
-@media screen and (min-width: 576px) and (max-width: 991px) {
-    .banner img{
+
+    .feature-grid>img {
         width: 100%;
     }
-    .nav-container{
+
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 999px) {
+    .banner img {
+        width: 100%;
+    }
+
+    .nav-container {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 50px;
     }
-    .feature{
+
+    .feature {
         flex-direction: column;
     }
+
+    .feature-grid>img {
+        width: 100%;
+    }
+
 }
