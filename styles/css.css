@@ -134,7 +134,10 @@ nav li a {
     width: 80%;
     margin: 0 auto;
     display: flex;
+    gap: 10px;
     justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 
 .facts-column {
@@ -166,11 +169,11 @@ nav li a {
         width: 100%;
     }
 
-    .nav-container {
+    .nav-container, .facts-icon {
         flex-direction: column;
     }
 
-    header {
+    header,.facts-icon {
         padding: 20px;
     }
 
@@ -184,6 +187,9 @@ nav li a {
 
     .feature-grid>img {
         width: 100%;
+    }
+    .facts-icon{
+        gap: 20px;
     }
 
 }
@@ -209,5 +215,9 @@ nav li a {
     .feature-grid>img {
         width: 100%;
     }
-
+    .facts-icon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
 }
